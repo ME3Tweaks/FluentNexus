@@ -86,6 +86,10 @@ namespace Pathoschild.FluentNexus.Models
         [JsonProperty("endorsement_count")]
         public int EndorsementCount { get; set; }
 
+        /// <summary>M3 EXTENSION: The tags for which game in Legendary Edition that are set, if found</summary>
+        [JsonProperty("legames")]
+        public string LEGames { get; set; }
+
         /// <inheritdoc />
         [JsonExtensionData]
         public IDictionary<string, object> UnmappedFields { get; set; }
